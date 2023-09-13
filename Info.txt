@@ -1,0 +1,28 @@
+// scenarion:
+// 1. receive order from customer by picking fruit_name.  2s.
+// start production 0s
+// cutting fruits  2s
+// select toppings
+// select serving handle
+// serve icecream  
+// ****************
+// scenario by the coach
+// order from customer  -->
+// fetch ingredients -->
+// start production -->
+// serve
+# **** detailed with time steps to follow ****
+# 1. place ORDER  -->2
+# 2.cut the fruit   -->2
+# 3. add water and ice  -->1
+# 4.start the machine -->1
+# 5 select container  -->2
+# 6 select toppings  -->3
+# 7 SERVE icecream  -->2    
+# total 13s
+
+
+// basically 2 functions, that are going to repeat for the icecream business to work.
+// order()   and production()  functions. and the connection between the two is such that order kick starts the production. this can be achieved by using callback technique/ concept of js.
+attaching time to various activities and related functions by using asynch js features, like callback, promises.
+putting production as a callback function in the order function.
